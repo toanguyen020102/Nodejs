@@ -10,6 +10,11 @@ dotenv.config()
 const app = express()
 const port = process.env.PORT || 3030
 
+//set up view enginer ho tro gi data va lay data
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 //setup view
 configview(app)

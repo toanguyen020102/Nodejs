@@ -4,6 +4,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    padding: 5px 10px;
+}
+
 ul li {
     margin-left: 20px;
     font-size: 16px;
@@ -14,4 +18,8 @@ ul li a {
     margin-left: 20px;
     font-size: 16px;
     text-decoration: none;
+}
+
+label {
+    display: block;
 }

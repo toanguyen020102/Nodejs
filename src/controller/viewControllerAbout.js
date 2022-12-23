@@ -1,6 +1,3 @@
-
-
-
 const viewAboutController = (req, res) => {
     return res.render('About.ejs')
 }

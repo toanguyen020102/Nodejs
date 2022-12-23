@@ -5,10 +5,8 @@ const connection = await mysql.createConnection({ host: 'localhost', user: 'root
 
 
 let viewUserController = async (req, res) => {
-    // lay id
     let id = req.params.userId;
     let [user, fields] = await connection.execute(`select * from users where id = ?`, [id])
-    console.log(user)
     return res.send(JSON.stringify(user))
 
 }
