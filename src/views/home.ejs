@@ -5,12 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
+    <title>Trang Chủ Node</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-    <h1>Hello Admin 1</h1>
+<body style="border: 1px solid black; background-color: aqua;">
+
+    <div id="Header" style="background-color: brown;">
+        <div class="List">
+            <ul style="display: flex; list-style: none; box-sizing: border-box; ">
+                <li><a href="">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <% for(var i=0; i < dataUser.length; i++) { %>
+
+                <li>
+                    <a href="">
+                        <%= dataUser[i].id %>
+
+                    </a>
+                    <a href="">
+                        <%= dataUser[i].Lname %>
+
+                    </a>
+                    <a href="">
+                        <%= dataUser[i].Fname %>
+
+                    </a>
+                    <a href="">
+                        <%= dataUser[i].mail %>
+                    </a>
+                    <a href="/detail/user/<%= dataUser[i].id %>">Detail</a>
+                    <button type="button">Update</button>
+                    <button type="button">Delete</button>
+                </li>
+
+
+                <% } %>
+        </ul>
+    </div>
+
 </body>
 
 </html>

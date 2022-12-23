@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "ejs": "3.1.6",
-    "form-data": "^4.0.0"
+    "form-data": "^4.0.0",
+    "mysql": "^2.3.0",
+    "mysql2": "^2.3.3"
   }
 }
