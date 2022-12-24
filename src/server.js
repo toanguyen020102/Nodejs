@@ -1,8 +1,9 @@
-import * as dotenv from 'dotenv'
+import dotenv from 'dotenv'
 import express from 'express'
 import configview from './configs/configviews.js'
 import initwebrouter from './router/web.js'
 import connection from './configs/connectDB.js'
+import initAPIv1 from './router/api.js'
 dotenv.config()
 
 
@@ -22,7 +23,8 @@ configview(app)
 //
 initwebrouter(app)
 
-
+//
+initAPIv1(app)
 
 
 app.listen(port, () => {
