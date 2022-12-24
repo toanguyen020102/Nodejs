@@ -9,28 +9,36 @@
 </head>
 
 <body>
-    <h1>Update Nhan Vien
+    <h1>Update Nhan Vien <%= dataUser.Lname%>
     </h1>
-    <%= JSON.stringify(dataUser)%>
-        <form action="">
-            <div>
-                <h4>Ho</h4>
-                <input type="text" name="Fname" value="<%=dataUser.Fname%>">
 
-            </div>
-            <div>
-                <h4>Ten</h4>
-                <input type="text" name="Lname" value="<%=dataUser.Lname%>">
-            </div>
-            <div>
-                <h4>Dia Chi</h4>
-                <input type="text" name="address" value=" <%= dataUser.address%>">
-            </div>
-            <div>
-                <h4>Email</h4>
-                <input type="text" name="Email" value=" <%= dataUser.Email%>">
-            </div>
-        </form>
+    <form action="/update" method="post">
+        <div>
+            <h4>Ho</h4>
+            <input type="text" name="id" value="<%=dataUser.id%>">
+
+        </div>
+        <div>
+            <h4>Ho</h4>
+            <input type="text" name="Fname" value="<%=dataUser.Fname%>">
+
+        </div>
+        <div>
+            <h4>Ten</h4>
+            <input type="text" name="Lname" value="<%=dataUser.Lname%>">
+        </div>
+        <div>
+            <h4>Dia Chi</h4>
+            <input type="text" name="address" value=" <%= dataUser.address%>">
+        </div>
+        <div>
+            <h4>Email</h4>
+            <input type="text" name="Email" value=" <%= dataUser.Email%>">
+        </div>
+        <div>
+            <button type="submit">Update</button>
+        </div>
+    </form>
 </body>
 
 </html>

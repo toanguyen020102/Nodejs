@@ -23,3 +23,7 @@ ul li a {
 label {
     display: block;
 }
+
+form {
+    display: inline;
+}
