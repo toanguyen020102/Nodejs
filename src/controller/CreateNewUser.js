@@ -10,4 +10,6 @@ const createnewUse = async (req, res) => {
     return res.redirect('/')
 }
 
+
+
 export default createnewUse

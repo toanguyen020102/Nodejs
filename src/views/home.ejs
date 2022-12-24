@@ -41,8 +41,13 @@
                         <%= dataUser[i].mail %>
                     </a>
                     <a href="/detail/user/<%= dataUser[i].id %>">Detail</a>
-                    <button type="button">Update</button>
-                    <button type="button">Delete</button>
+                    <form action="/view/<%= dataUser[i].id %>" method="get">
+                        <button type="submit" name="update">Update</button>
+                    </form>
+                    <form action="/deleteUser" method="POST">
+                        <button type="submit" name="delete" value="<%= dataUser[i].id %>">
+                            Delete</button>
+                    </form>
                 </li>
 
 
